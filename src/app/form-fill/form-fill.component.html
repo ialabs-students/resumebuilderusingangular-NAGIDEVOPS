@@ -1,0 +1,159 @@
+<form style="margin: 40px 40px 10px 50px;" id="regForm" *ngIf="!showresume" (submit)="handelOnSubmitEvent()">
+    <div class="row ml-1 mb-2 mt-2">
+        <div class="col-md-3">
+    <div class="card">
+        <div class="card-header">
+            <img class="card-img-top" src="../assets/images/image7.jpg" style="width: 200px;height: 200px;">
+            <input type="file" id="ProfilePic">
+        </div>
+        
+        <div class="card-footer">
+            <p>Profile Picture</p>
+        </div>
+    </div>
+
+</div>
+    <div class="col-md-9">
+    <div class="jumbotron" style="background-color: hwb(130 0% 56%);">
+    <h3>Enter Basic Informations:</h3>
+    <table width="1000">
+        <tr>
+            <td> <label> Enter First Name: </label> </td>
+            <td> <input type="text" name="fname" id="fname" [(ngModel)]="FormData.FirstName"> </td>
+            <td> <label> Enter Last Name: </label> </td>
+            <td> <input type="text" name="lname" id="lname" [(ngModel)]="FormData.LastName"> </td>
+        </tr>
+        <tr>
+            <td> <label> Enter Email Id: </label> </td>
+            <td> <input type="email" name="email" id="email" [(ngModel)]="FormData.email"> </td>
+            <td> <label> Enter Mobile Number: </label> </td>
+            <td> <input type="number" name="mobile" id="mobile" [(ngModel)]="FormData.mobile"> </td>
+        </tr>
+        <tr>
+            <td> <label> Enter Date of Birth: </label> </td>
+            <td> <input type="date" name="dob" id="dob" [(ngModel)]="FormData.dob"> </td>
+            <td> <label> Enter Gender: </label> </td>
+            <td> <select name="gender" id="gender" [(ngModel)]="FormData.gender">
+                    <option value="">-select-</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="O">Other</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+</div>
+    <div class="jumbotron" style="background-color: hwb(64 1% 43%);">
+        <h3>Enter Educational Qualification:</h3>
+        <table width="1000">
+            <thead>
+                <tr>
+                    <th> Education </th>
+                    <th> School/University</th>
+                    <th> Year of Passing </th>
+                    <th> Percentage/CGPA </th>
+                </tr>
+            </thead>
+            <tr>
+                <td> <label> Post Graduation: </label> </td>
+                <td> <input type="text" name="university1" id="university1" placeholder="Enter School/University" [(ngModel)]="FormData.university1"> </td>
+                <td> <input type="number" name="yearofpassing1" id="yearofpassing1" placeholder="Enter Year of Passing" [(ngModel)]="FormData.yearofpassing1"> </td>
+                <td> <input type="number" name="percentage1" id="percentage1" placeholder="Enter Percentage/CGPA" [(ngModel)]="FormData.percentage1"> </td>
+            </tr>
+            <tr>
+                <td> <label> Graduation: </label> </td>
+                <td> <input type="text" name="university2" id="university2" placeholder="Enter School/University" [(ngModel)]="FormData.university2"> </td>
+                <td> <input type="number" name="yearofpassing2" id="yearofpassing2" placeholder="Enter Year of Passing" [(ngModel)]="FormData.yearofpassing2"> </td>
+                <td> <input type="number" name="percentage2" id="percentage2" placeholder="Enter Percentage/CGPA" [(ngModel)]="FormData.percentage2"> </td>
+            </tr>
+            <tr>
+                <td> <label> Intermidate: </label> </td>
+                <td> <input type="text" name="university3" id="university3" placeholder="Enter School/University" [(ngModel)]="FormData.university3"> </td>
+                <td> <input type="number" name="yearofpassing3" id="yearofpassing3" placeholder="Enter Year of Passing" [(ngModel)]="FormData.yearofpassing3"> </td>
+                <td> <input type="number" name="percentage3" id="percentage3" placeholder="Enter Percentage/CGPA" [(ngModel)]="FormData.percentage3"> </td>
+            </tr>
+            <tr>
+                <td> <label> High School: </label> </td>
+                <td> <input type="text" name="university4" id="university4" placeholder="Enter School/University" [(ngModel)]="FormData.university4"> </td>
+                <td> <input type="number" name="yearofpassing4" id="yearofpassing4" placeholder="Enter Year of Passing" [(ngModel)]="FormData.yearofpassing4"> </td>
+                <td> <input type="number" name="percentage4" id="percentage4" placeholder="Enter Percentage/CGPA" [(ngModel)]="FormData.percentage4"> </td>
+            </tr>
+
+        </table>
+    </div>
+   
+        <div class="jumbotron" style="background-color: hwb(181 1% 59%);">
+            <h3>Enter Experience:</h3>
+            <table width="1000">
+                <thead>
+                    <tr>
+                        <th> Organization </th>
+                        <th> Joining Date</th>
+                        <th> Releaving Date </th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td> <input type="text" name="organization1" id="organization1" placeholder="Enter Organization" [(ngModel)]="FormData.organization1"> </td>
+                    <td> <input type="date" name="doj1" id="doj1" placeholder="Enter Joining Date" [(ngModel)]="FormData.doj1"> </td>
+                    <td> <input type="date" name="dor1" id="dor1" placeholder="Enter Releaving Date" [(ngModel)]="FormData.dor1"> </td>
+                </tr>
+                <tr>
+                    <td> <input type="text" name="organization2" placeholder="Enter Organization" [(ngModel)]="FormData.organization2"> </td>
+                    <td> <input type="date" name="doj2" placeholder="Enter Joining Date" [(ngModel)]="FormData.doj2"> </td>
+                    <td> <input type="date" name="dor2" placeholder="Enter Releaving Date" [(ngModel)]="FormData.dor2"> </td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="jumbotron" style="background-color: hwb(13 1% 51%);">
+    <h3>Enter Skils:</h3>
+    <table width="1000">
+        <thead>
+            <tr>
+                <th> Technology </th>
+                <th> Version Worked On</th>
+                <th> Last Worked On </th>
+                <th> Ratting </th>
+            </tr>
+        </thead>
+        <tr>
+            <td> <input type="text" name="tech1" id="tech1" placeholder="Enter Technology" [(ngModel)]="FormData.tech1"> </td>
+            <td> <input type="text" name="version1" id="version1" placeholder="Enter Version Worked On" [(ngModel)]="FormData.version1"> </td>
+            <td> <select name="lastworkedon1" id="lastworkedon1" [(ngModel)]="FormData.lastworkedon1">
+                    <option value="0">-select- </option>
+                    <option value="1">Last Month </option>
+                    <option value="2">Within 6 months </option>
+                    <option value="3">Before 6 Months </option>
+                </select>
+            </td>
+            <td> <input type="number" max="10" name="rate1" id="rate1" placeholder="Rate yourself out of 10" [(ngModel)]="FormData.rate1"> </td>
+        </tr>
+        <tr>
+            <td> <input type="text" name="tech2" placeholder="Enter Technology" [(ngModel)]="FormData.tech2"> </td>
+            <td> <input type="text" name="version2" placeholder="Enter Version Worked On" [(ngModel)]="FormData.version2"> </td>
+            <td> <select name="lastworkedon2" [(ngModel)]="FormData.lastworkedon2">
+                    <option value="0">-select- </option>
+                    <option value="1">Last Month </option>
+                    <option value="2">Within 6 months </option>
+                    <option value="3">Before 6 Months </option>
+                </select>
+            </td>
+            <td> <input type="number" max="10" name="rate2" placeholder="Rate yourself out of 10" [(ngModel)]="FormData.rate2"> </td>
+        </tr>
+
+    </table>
+    </div>
+
+    <h3>Objective</h3>
+    <textarea name="Objective" id="Objective" width="600" cols="180" rows="5" height="600" placeholder="Enter you wishdom" [(ngModel)]="FormData.Objective"></textarea>
+    <h3>Declaration:</h3>
+    <textarea name="description" id="description" width="600" height="600" cols="180" rows="5" placeholder="Enter you wishdom" [(ngModel)]="FormData.description"></textarea>
+        
+    
+        <button class="btn btn-danger">Reset</button>
+        <button class="btn btn-info" >Submit</button>
+  
+</form>
+<app-resume-preview *ngIf="showresume"></app-resume-preview>

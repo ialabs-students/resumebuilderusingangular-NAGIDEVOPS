@@ -1,0 +1,131 @@
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <div class="mt-4">
+            <div class="card">
+              <div class="card-header">
+                <img class="card-img-top" src="image7.jpg" />
+              </div>
+              <div class="card-body">
+                <h4>{{FormData.FirstName}}{{FormData.LastName}}</h4>
+                <p>Software Developer</p>
+                <p>{{FormData.dob}}</p>
+                <p>{{FormData.gender}}</p>
+              </div>
+              <div class="card-footer">
+                <p>{{FormData.email}}</p>
+                <p>{{FormData.mobile}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8 mt-4">
+          <div class="row shadow-sm bg-warning">
+            <h1 class="text-center">Resume Builder</h1>
+          </div>
+          <div class="row row shadow-sm bg-light mt-4">
+            <h5>Objective :</h5>
+            <p class="p-4">
+              {{FormData.Objective}}
+            </p>
+          </div>
+          <div class="row row shadow-sm bg-white mt-4">
+            <h5>Educational Qualification :</h5>
+            <table width="1000" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Education</th>
+                  <th scope="col">School/University</th>
+                  <th scope="col">Year of Passing</th>
+                  <th scope="col">Percentage/CGPA</th>
+                </tr>
+              </thead>
+              <tr>
+                <td><label> Post Graduation: </label></td>
+                <td>{{FormData.university1}}</td>
+                <td>{{FormData.yearofpassing1}}</td>
+                <td>{{FormData.percentage1}}</td>
+              </tr>
+              <tr>
+                <td><label> Graduation: </label></td>
+                <td>{{FormData.university2}}</td>
+                <td>{{FormData.yearofpassing2}}</td>
+                <td>{{FormData.percentage2}}</td>
+              </tr>
+              <tr>
+                <td><label> Intermidate: </label></td>
+                <td>{{FormData.university3}}</td>
+                <td>{{FormData.yearofpassing3}}</td>
+                <td>{{FormData.percentage3}}</td>
+              </tr>
+              <tr>
+                <td><label> High School: </label></td>
+                <td>{{FormData.university4}}</td>
+                <td>{{FormData.yearofpassing4}}</td>
+                <td>{{FormData.percentage4}}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="row row shadow-sm bg-light mt-4">
+            <h5>Work Experience :</h5>
+            <table width="1000" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Organization</th>
+                  <th scope="col">Joining Date</th>
+                  <th scope="col">Releaving Date</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>{{FormData.organization1}}</td>
+                <td>{{FormData.doj1}}</td>
+                <td>{{FormData.dor1}}</td>
+              </tr>
+              <tr>
+                <td>{{FormData.organization2}}</td>
+                <td>{{FormData.doj2}}</td>
+                <td>{{FormData.dor2}}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="row row shadow-sm bg-white mt-4">
+            <h5>Skills :</h5>
+            <table width="1000" class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Technology</th>
+                  <th scope="col">Version Worked On</th>
+                  <th scope="col">Last Worked On</th>
+                  <th scope="col">Ratting</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>{{FormData.tech1}}</td>
+                <td>{{FormData.version1}}</td>
+                <td>{{FormData.lastworkedon1}}</td>
+                <td>{{FormData.rate1}}</td>
+              </tr>
+              <tr>
+                <td>{{FormData.tech2}}</td>
+                <td>{{FormData.version2}}</td>
+                <td>{{FormData.lastworkedon2}}</td>
+                <td>{{FormData.rate2}}</td>
+              </tr>
+            </table>
+          </div>
+          <div class="row row shadow-sm bg-light mt-4">
+            <h5>Declaration :</h5>
+            <p class="p-4">
+                {{FormData.description}}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center mt-4">
+        <div class="col-12">
+          <button class="btn btn-success" onclick="printCV()">Print</button>
+        </div>
+      </div>
+    </div>
+  </body>

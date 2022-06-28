@@ -1,0 +1,53 @@
+h3{
+    color: white;
+    font-style: italic;
+    font-family: sans-serif;
+    }
+    h2{
+    color: white;
+    font-family: sans-serif;
+    }
+    table {
+            width: 100%;
+            border: 1px solid white;
+        }
+        td {
+            text-align: center;
+            height: 40px;
+            border: 1px solid white;
+        }
+        thead {
+            background-color: antiquewhite;
+        }
+       
+        input[type=text], [type=email],[type=number],[type=date], select {
+    
+    padding: 12px 40px;
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+    
+    th{
+    text-align: center;
+    }
+    
+    textarea{
+    padding: 12px 40px;
+    margin: 5px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    }
+    div .col-md-2 {
+            background-color: gray;
+            height: 500px;
+        }
+        div .col-md-10 {
+            background-color: rgb(208, 179, 179);
+            height: 500px;
+        }
+    
